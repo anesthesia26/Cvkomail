@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>السيرة الذاتية - السيد كُمَيل نبيل الموسوي</title>
+    <title>السيرة الذاتية - السيد كُمَيل نبيل علي الموسوي</title>
     <style>
         :root {
             --primary: #1e3a8a;
-            --secondary: #0ea5e9;
-            --dark: #1e293b;
+            --secondary: #0284c7;
+            --dark: #0f172a;
             --light: #f8fafc;
             --accent: #38bdf8;
             --border: #e2e8f0;
+            --text-main: #334155;
         }
         
         * {
@@ -23,146 +24,145 @@
 
         body {
             background-color: #f1f5f9;
-            color: var(--dark);
-            line-height: 1.6;
-            padding: 20px;
+            color: var(--text-main);
+            line-height: 1.8;
+            padding: 30px;
         }
 
-        .cv-container {
-            max-width: 900px;
+        .cv-wrapper {
+            max-width: 950px;
             margin: 0 auto;
             background: #ffffff;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             overflow: hidden;
-            display: flex;
-            flex-direction: column;
         }
 
-        /* Header Section */
-        .header {
-            background: linear-gradient(135deg, var(--primary), #1e293b);
-            color: white;
+        /* Header Layout */
+        .cv-header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            color: #ffffff;
             padding: 40px;
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
             justify-content: space-between;
-            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            border-bottom: 5px solid var(--accent);
         }
 
-        .header-info h1 {
-            font-size: 28px;
-            margin-bottom: 8px;
+        .cv-title-area h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 6px;
             color: #ffffff;
         }
 
-        .header-info h2 {
+        .cv-title-area h2 {
             font-size: 18px;
             color: var(--accent);
             font-weight: 500;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
-        .contact-list {
-            list-style: none;
+        .contact-grid {
             display: flex;
-            flex-direction: column;
-            gap: 8px;
+            flex-wrap: wrap;
+            gap: 15px 25px;
+            list-style: none;
             font-size: 14px;
         }
 
-        .contact-list li {
+        .contact-grid li {
             display: flex;
             align-items: center;
             gap: 8px;
-            color: #cbd5e1;
+            color: #e2e8f0;
         }
 
-        .profile-img-container {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 4px solid var(--accent);
-            background: #0f172a;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Main Body Layout */
-        .content-body {
+        /* Body Content Sections */
+        .cv-body {
             padding: 40px;
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 35px;
         }
 
-        section {
-            margin-bottom: 10px;
+        .section-box {
+            background: #ffffff;
         }
 
-        .section-title {
+        .section-heading {
             font-size: 20px;
             color: var(--primary);
-            border-bottom: 2px solid var(--accent);
-            padding-bottom: 6px;
-            margin-bottom: 16px;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-weight: 700;
         }
 
-        p, li {
+        p {
             font-size: 15px;
-            color: #475569;
-            margin-bottom: 8px;
+            color: var(--text-main);
+            margin-bottom: 12px;
+            text-align: justify;
         }
 
         ul {
             padding-right: 20px;
+            margin-top: 8px;
         }
 
-        .item-block {
-            margin-bottom: 16px;
+        li {
+            font-size: 15px;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+            padding-right: 15px;
+            border-right: 3px solid var(--border);
         }
 
         .item-title {
-            font-weight: 600;
+            font-size: 17px;
+            font-weight: 700;
             color: var(--dark);
-            font-size: 16px;
         }
 
-        .item-subtitle {
+        .item-org-date {
             font-size: 14px;
             color: var(--secondary);
-            font-weight: 500;
-            margin-bottom: 6px;
+            font-weight: 600;
+            margin-bottom: 8px;
         }
 
-        /* Skills Tags */
-        .skills-grid {
+        /* Skills Tags Layout */
+        .skills-container {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
             margin-top: 10px;
         }
 
-        .skill-tag {
+        .skill-badge {
             background: #e0f2fe;
             color: #0369a1;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 13px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
             font-weight: 600;
             border: 1px solid #bae6fd;
         }
 
-        .skill-tag.web {
+        .skill-badge.web-dev {
             background: #f0fdf4;
-            color: #15803d;
+            color: #166534;
             border-color: #bbf7d0;
         }
 
-        .footer-note {
+        .cv-footer {
             background: #f8fafc;
             text-align: center;
             padding: 20px;
@@ -174,13 +174,13 @@
 </head>
 <body>
 
-    <div class="cv-container">
+    <div class="cv-wrapper">
         <!-- Header -->
-        <header class="header">
-            <div class="header-info">
-                <h1>السيد كُمَيل نبيل الموسوي</h1>
-                <h2>تقني تخدير وعناية مركزة | مطور ومصمم ويب HTML</h2>
-                <ul class="contact-list">
+        <header class="cv-header">
+            <div class="cv-title-area">
+                <h1>السيد كُمَيل نبيل علي الموسوي</h1>
+                <h2>تقني تخدير وعناية مركزة | مطور ومصمم ويب ومبرمج أكواد HTML</h2>
+                <ul class="contact-grid">
                     <li>📧 Komail998800@gmail.com</li>
                     <li>📍 النجف الأشرف، العراق</li>
                     <li>📞 +9647744744725</li>
@@ -188,67 +188,143 @@
             </div>
         </header>
 
-        <!-- Body Content -->
-        <div class="content-body">
-            
-            <!-- About Me -->
-            <section>
-                <h3 class="section-title">📌 نبذة عني</h3>
+        <!-- Main Body -->
+        <div class="cv-body">
+
+            <!-- 1. Objective / About Me -->
+            <section class="section-box">
+                <div class="section-heading">📌 نبذة عني</div>
                 <p>
-                    خريج بكالوريوس في تقنيات التخدير والعناية المركزة، ومن الأوائل للأربع سنوات الدراسية. أمتلك خلفية علمية أكاديمية وخبرة سريرية عملية تمتد لعدة سنوات في صالات العمليات ووحدات العناية المركزة. بالإضافة إلى تخصصي الطبي، أمتلك شغفاً وخبرة عملية في تطوير وتصميم مواقع الويب وكتابة أكواد HTML و CSS وتطوير أفكار برمجية تقنية رقمية مبتكرة لخدمة المؤسسات والمنصات التعليمية الطبية.
+                    خريج بكالوريوس في تقنيات التخدير والعناية المركزة، ومن الأوائل للأربع سنوات الدراسية. أمتلك خلفية علمية أكاديمية وخبرة سريرية عملية تمتد لعدة سنوات في صالات العمليات ووحدات العناية المركزة. لدي اهتمام واضح بالتدريس الأكاديمي ونقل المعرفة النظرية والعملية لطلبة التخصص، والمشاركة في النشاطات الجامعية والبحث العلمي. أسعى للعمل في بيئة أكاديمية أو صحية تتيح لي توظيف مهاراتي السريرية والتعليمية والمساهمة في دعم العملية التعليمية والارتقاء بمستوى التعليم الطبي.
+                </p>
+                <p>
+                    <strong>بالإضافة إلى تخصصي الطبي المتقدم:</strong> أمتلك مهارات وشغفاً عالياً في مجال التكنولوجيا وتطوير الويب، تشمل كتابة واختبار أكواد <strong>HTML5 / CSS3</strong>، وتصميم واجهات المواقع والصفحات الرقمية التفاعلية، وابتكار أفكار وتطبيقات ويب تقنية تخدم المنصات التعليمية والأكاديمية.
                 </p>
             </section>
 
-            <!-- Web Development & Programming Skills -->
-            <section>
-                <h3 class="section-title">💻 خبرات البرمجة وتصميم الويب (HTML & Web Design)</h3>
-                <div class="skills-grid">
-                    <span class="skill-tag web">كتابة واكتتاب أكواد HTML5 بكفاءة عالية</span>
-                    <span class="skill-tag web">تصميم وتنسيق واجهات المستخدم باستخدام CSS3</span>
-                    <span class="skill-tag web">تصميم وتطوير المواقع والصفحات التفاعلية</span>
-                    <span class="skill-tag web">أفكار وإبتكار حلول ويب متطورة للمنصات التعليمية والطبية</span>
+            <!-- 2. Web Development Experience -->
+            <section class="section-box">
+                <div class="section-heading">💻 خبرات البرمجة وتصميم الويب (HTML & Web Design)</div>
+                <p>خبرات ومهارات تقنية متقدمة في تطوير الواجهات وتصميم المنصات الرقمية:</p>
+                <div class="skills-container">
+                    <span class="skill-badge web-dev">كتابة وبناء أكواد HTML5 بكفاءة عالية</span>
+                    <span class="skill-badge web-dev">تصميم وتنسيق واجهات المستخدم باستخدام CSS3</span>
+                    <span class="skill-badge web-dev">تطوير وتصميم مواقع الويب التفاعلية المتجولة (Responsive)</span>
+                    <span class="skill-badge web-dev">ابتكار وتنفيذ أفكار ومشاريع ويب خدمية وأكاديمية</span>
+                    <span class="skill-badge web-dev">تنظيم وهيكلة المحتوى البرمجي الرقمي بدقة</span>
                 </div>
             </section>
 
-            <!-- Academic Qualification -->
-            <section>
-                <h3 class="section-title">🎓 الشهادة الأكاديمية</h3>
-                <div class="item-block">
-                    <div class="item-title">بكالوريوس تقنيات تخدير وعناية مركزة</div>
-                    <div class="item-subtitle">جامعة الكفيل / كلية التقنيات الصحية والطبية / 2026-2025</div>
+            <!-- 3. Academic Qualification -->
+            <section class="section-box">
+                <div class="section-heading">🎓 الشهادة الأكاديمية</div>
+                <div class="education-item">
+                    <div class="item-title">بكالوريوس تقنيات تخدير وعناية مركزة (من الأوائل للأربع سنوات الدراسية)</div>
+                    <div class="item-org-date">جامعة الكفيل / كلية التقنيات الصحية والطبية / 2025-2026</div>
                 </div>
             </section>
 
-            <!-- Practical Experience -->
-            <section>
-                <h3 class="section-title">🏥 الخبرات العملية والتدريب السريري</h3>
-                <div class="item-block">
+            <!-- 4. Practical Experience -->
+            <section class="section-box">
+                <div class="section-heading">🏥 الخبرات العملية والتدريب السريري</div>
+                
+                <div class="experience-item">
                     <div class="item-title">المستشفى التخصصي لأمراض وجراحة الجهاز الهضمي والكبد</div>
-                    <div class="item-subtitle">الفترة: 2023 - الآن</div>
+                    <div class="item-org-date">الفترة: 2023 - الان</div>
                     <ul>
                         <li>تدريب سريري مستمر منذ المرحلة الأولى في الدراسة الجامعية.</li>
                         <li>اكتساب مهارات عملية متقدمة في صالات العمليات ووحدات العناية المركزة.</li>
                         <li>التدريب على التنبيب الرغامي (Endotracheal Intubation) تحت إشراف أخصائي التخدير والعناية المركزة.</li>
+                        <li>مراقبة العلامات الحيوية قبل وأثناء وبعد التخدير بدقة عالية.</li>
+                        <li>حساب وتحضير الجرعات الدوائية الخاصة بالتخدير بشكل عملي وآمن.</li>
+                        <li>التعامل المباشر مع أجهزة التخدير والمراقبة الحيوية الحديثة.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-title">مستشفى النجف الأشرف التعليمي - وحدة العناية المركزة (ICU)</div>
+                    <div class="item-org-date">الفترة: 2025 - 2026</div>
+                    <ul>
+                        <li>التدريب العملي المكثف في رعاية مرضى الحالات الحرجة.</li>
+                        <li>متابعة المرضى المستمرة على أجهزة المراقبة الحيوية وأجهزة الدعم المتقدم.</li>
+                        <li>العمل بكفاءة ضمن الفريق الطبي المتكامل في تقديم الرعاية الصحية المتقدمة.</li>
                     </ul>
                 </div>
             </section>
 
-            <!-- Skills -->
-            <section>
-                <h3 class="section-title">🛠️ المهارات المهنية والتقنية</h3>
-                <div class="skills-grid">
-                    <span class="skill-tag">العمل في صالات العمليات والعناية المركزة</span>
-                    <span class="skill-tag">التعامل مع أجهزة التنفس الاصطناعي (Ventilator)</span>
-                    <span class="skill-tag">حساب وتحضير الجرعات الدوائية</span>
-                    <span class="skill-tag">Microsoft Office & SPSS</span>
-                    <span class="skill-tag">HTML & Web Development</span>
+            <!-- 5. Academic & Teaching Qualifications -->
+            <section class="section-box">
+                <div class="section-heading">📚 المؤهلات الأكاديمية والتدريسية</div>
+                <ul>
+                    <li>الاستعداد التام للمشاركة في التدريس العملي والمختبري لمواد قسم تقنيات التخدير والعناية المركزة.</li>
+                    <li>القدرة المتميزة على شرح المفاهيم النظرية والعملية للطلبة بأسلوب مبسط ومنهجي.</li>
+                    <li>الإسهام الفاعل في تنظيم وإدارة المختبرات التعليمية الخاصة بالتخدير والعناية المركزة.</li>
+                    <li>المشاركة في إعداد المواد التعليمية والدروس العملية تحت إشراف الهيئة التدريسية.</li>
+                    <li>الالتزام التام بالتعليمات الأكاديمية والعمل وفق الأنظمة الجامعية الرصينة.</li>
+                </ul>
+            </section>
+
+            <!-- 6. Skills -->
+            <section class="section-box">
+                <div class="section-heading">🛠️ المهارات المهنية والتقنية</div>
+                <div class="skills-container">
+                    <span class="skill-badge">العمل الاحترافي داخل صالات العمليات ووحدات العناية المركزة (ICU)</span>
+                    <span class="skill-badge">التعامل مع أجهزة التنفس الاصطناعي (Ventilator) والمراقبة</span>
+                    <span class="skill-badge">مراقبة العلامات الحيوية وتقييم الحالة السريرية للمريض</span>
+                    <span class="skill-badge">حساب وتحضير الجرعات الدوائية الخاصة بالتخدير</span>
+                    <span class="skill-badge">شرح المواد الدراسية لطلبة قسم تقنيات التخدير</span>
+                    <span class="skill-badge">مهارات تواصل فعّالة والعمل ضمن الفريق الطبي</span>
+                    <span class="skill-badge">مهارات الحاسوب الشاملة (Microsoft Word, Excel, PowerPoint)</span>
+                    <span class="skill-badge">إنشاء العروض التقديمية الاحترافية باستخدام PowerPoint</span>
+                    <span class="skill-badge">القدرة على القيام بالتحليل الإحصائي باستخدام برنامج SPSS</span>
+                    <span class="skill-badge web-dev">HTML & CSS Web Development</span>
                 </div>
+            </section>
+
+            <!-- 7. Academic Research & Activities -->
+            <section class="section-box">
+                <div class="section-heading">🔬 البحوث والنشاطات الأكاديمية</div>
+                <div class="experience-item">
+                    <div class="item-title">بحث التخرج</div>
+                    <p><strong>العنوان:</strong> تأثير البروبوفول في علاج تشنج الحنجرة أثناء التخدير (حصلت على تقدير امتياز).</p>
+                </div>
+                <div class="experience-item" style="margin-top: 15px;">
+                    <div class="item-title">النشاطات الجامعية</div>
+                    <ul>
+                        <li>المشاركة في حفل افتتاح المختبرات الجديدة لقسم تقنيات التخدير في جامعة الكفيل وحصلت على كتاب شكر من السيد العميد.</li>
+                        <li>المشاركة في المشهد التمثيلي التعريفي بالقسم للطلبة الجدد.</li>
+                        <li>المشاركة الفعالة في فعالية اليوم العالمي للتخدير وشرح أجهزة التخدير للسيد رئيس الجامعة والعمداء.</li>
+                        <li>المشاركة في مشهد تمثيلي يوضح دور تقني التخدير داخل صالة العمليات بحضور السيد رئيس الجامعة وعدد من العمداء ورؤساء الأقسام.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 8. Professional Interests -->
+            <section class="section-box">
+                <div class="section-heading">🎯 الاهتمامات المهنية</div>
+                <ul>
+                    <li>التعليم الطبي والتدريب السريري المتقدم.</li>
+                    <li>تطوير مهارات طلبة تقنيات التخدير والعناية المركزة.</li>
+                    <li>البحث العلمي المستمر في مجال التخدير والعناية المركزة.</li>
+                    <li>العمل الأكاديمي والمختبري ضمن المؤسسات التعليمية الرصينة.</li>
+                    <li>تطوير مواقع الويب والحلول البرمجية الرقمية المبتكرة.</li>
+                </ul>
+            </section>
+
+            <!-- 9. Languages -->
+            <section class="section-box">
+                <div class="section-heading">🗣️ اللغات</div>
+                <ul>
+                    <li><strong>العربية:</strong> اللغة الأم (إتقان تام تحدثاً وكتابةً)</li>
+                    <li><strong>الإنجليزية:</strong> جيد جدًا وخاصةً في المصطلحات الطبية المتخصصة</li>
+                </ul>
             </section>
 
         </div>
 
-        <div class="footer-note">
-            تم تصميم وإنشاء كود الHTML خصيصاً للسيد كُمَيل نبيل الموسوي &copy; 2026
+        <!-- Footer -->
+        <div class="cv-footer">
+            جميع الحقوق محفوظة للسيد كُمَيل نبيل علي الموسوي &copy; 2026
         </div>
     </div>
 
