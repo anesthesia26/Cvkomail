@@ -80,6 +80,51 @@
             color: #e2e8f0;
         }
 
+        /* Download Box Style */
+        .download-box {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border: 2px dashed #16a34a;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 40px 0 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .download-box-text h3 {
+            color: #166534;
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+
+        .download-box-text p {
+            color: #15803d;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .download-btn {
+            background-color: #16a34a;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.3s ease;
+            box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+        }
+
+        .download-btn:hover {
+            background-color: #15803d;
+        }
+
         /* Body Content Sections */
         .cv-body {
             padding: 40px;
@@ -138,7 +183,6 @@
             margin-bottom: 8px;
         }
 
-        /* Skills Tags Layout */
         .skills-container {
             display: flex;
             flex-wrap: wrap;
@@ -178,15 +222,27 @@
         <!-- Header -->
         <header class="cv-header">
             <div class="cv-title-area">
-                <h1>السيد كُمَيل نبيل علي الموسوي</h1>
+                <h1>السيد كُمَيل نبيل علي الموسوي[span_0](start_span)[span_0](end_span)</h1>
                 <h2>تقني تخدير وعناية مركزة | مطور ومصمم ويب ومبرمج أكواد HTML</h2>
                 <ul class="contact-grid">
-                    <li>📧 Komail998800@gmail.com</li>
-                    <li>📍 النجف الأشرف، العراق</li>
-                    <li>📞 +9647744744725</li>
+                    <li>📧 Komail998800@gmail.com[span_1](start_span)[span_1](end_span)</li>
+                    <li>📍 النجف الأشرف، العراق[span_2](start_span)[span_2](end_span)</li>
+                    <li>📞 +9647744744725[span_3](start_span)[span_3](end_span)</li>
                 </ul>
             </div>
         </header>
+
+        <!-- Download PDF Section Box -->
+        <div class="download-box">
+            <div class="download-box-text">
+                <h3>تحميل السيرة الذاتية الرسمية (PDF)</h3>
+                <p>يمكنك تحميل نسخة الـ PDF الأصلية المعتمدة بضغطة زر واحدة</p>
+            </div>
+            <!-- قم بتغيير كلمة "CV-Komail.pdf" إلى اسم ملف الـ PDF الخاص بك الذي سترفعه مع الموقع -->
+            <a href="CV-Komail.pdf" class="download-btn" download>
+                📥 تحميل ملف الـ PDF
+            </a>
+        </div>
 
         <!-- Main Body -->
         <div class="cv-body">
@@ -195,23 +251,21 @@
             <section class="section-box">
                 <div class="section-heading">📌 نبذة عني</div>
                 <p>
-                    خريج بكالوريوس في تقنيات التخدير والعناية المركزة، ومن الأوائل للأربع سنوات الدراسية. أمتلك خلفية علمية أكاديمية وخبرة سريرية عملية تمتد لعدة سنوات في صالات العمليات ووحدات العناية المركزة. لدي اهتمام واضح بالتدريس الأكاديمي ونقل المعرفة النظرية والعملية لطلبة التخصص، والمشاركة في النشاطات الجامعية والبحث العلمي. أسعى للعمل في بيئة أكاديمية أو صحية تتيح لي توظيف مهاراتي السريرية والتعليمية والمساهمة في دعم العملية التعليمية والارتقاء بمستوى التعليم الطبي.
+                    خريج بكالوريوس في تقنيات التخدير والعناية المركزة ، ومن الأوائل للأربع سنوات الدراسية. أمتلك خلفية علمية أكاديمية وخبرة سريرية عملية تمتد لعدة سنوات في صالات العمليات ووحدات العناية المركزة. لدي اهتمام واضح بالتدريس الأكاديمي ونقل المعرفة النظرية والعملية لطلبة التخصص، والمشاركة في النشاطات الجامعية والبحث العلمي. أسعى للعمل في بيئة أكاديمية أو صحية تتيح لي توظيف مهاراتي السريرية والتعليمية والمساهمة في دعم العملية التعليمية والارتقاء بمستوى التعليم الطبي[span_4](start_span)[span_4](end_span).
                 </p>
                 <p>
-                    <strong>بالإضافة إلى تخصصي الطبي المتقدم:</strong> أمتلك مهارات وشغفاً عالياً في مجال التكنولوجيا وتطوير الويب، تشمل كتابة واختبار أكواد <strong>HTML5 / CSS3</strong>، وتصميم واجهات المواقع والصفحات الرقمية التفاعلية، وابتكار أفكار وتطبيقات ويب تقنية تخدم المنصات التعليمية والأكاديمية.
+                    <strong>بالإضافة إلى تخصصي الطبي:</strong> أمتلك مهارات متقدمة في تطوير وتصميم مواقع الويب وكتابة أكواد <strong>HTML5 / CSS3</strong> باحترافية تامة لابتكار وتطوير المنصات الرقمية التعليمية والخدمية.
                 </p>
             </section>
 
             <!-- 2. Web Development Experience -->
             <section class="section-box">
                 <div class="section-heading">💻 خبرات البرمجة وتصميم الويب (HTML & Web Design)</div>
-                <p>خبرات ومهارات تقنية متقدمة في تطوير الواجهات وتصميم المنصات الرقمية:</p>
                 <div class="skills-container">
-                    <span class="skill-badge web-dev">كتابة وبناء أكواد HTML5 بكفاءة عالية</span>
+                    <span class="skill-badge web-dev">كتابة واكتتاب أكواد HTML5 بكفاءة عالية</span>
                     <span class="skill-badge web-dev">تصميم وتنسيق واجهات المستخدم باستخدام CSS3</span>
-                    <span class="skill-badge web-dev">تطوير وتصميم مواقع الويب التفاعلية المتجولة (Responsive)</span>
+                    <span class="skill-badge web-dev">تطوير وتصميم المواقع والصفحات التفاعلية</span>
                     <span class="skill-badge web-dev">ابتكار وتنفيذ أفكار ومشاريع ويب خدمية وأكاديمية</span>
-                    <span class="skill-badge web-dev">تنظيم وهيكلة المحتوى البرمجي الرقمي بدقة</span>
                 </div>
             </section>
 
@@ -219,8 +273,8 @@
             <section class="section-box">
                 <div class="section-heading">🎓 الشهادة الأكاديمية</div>
                 <div class="education-item">
-                    <div class="item-title">بكالوريوس تقنيات تخدير وعناية مركزة (من الأوائل للأربع سنوات الدراسية)</div>
-                    <div class="item-org-date">جامعة الكفيل / كلية التقنيات الصحية والطبية / 2025-2026</div>
+                    <div class="item-title">بكالوريوس تقنيات تخدير وعناية مركزة[span_5](start_span)[span_5](end_span)</div>
+                    <div class="item-org-date">جامعة الكفيل / كلية التقنيات الصحية والطبية / 2026-2025[span_6](start_span)[span_6](end_span)</div>
                 </div>
             </section>
 
@@ -229,25 +283,25 @@
                 <div class="section-heading">🏥 الخبرات العملية والتدريب السريري</div>
                 
                 <div class="experience-item">
-                    <div class="item-title">المستشفى التخصصي لأمراض وجراحة الجهاز الهضمي والكبد</div>
-                    <div class="item-org-date">الفترة: 2023 - الان</div>
+                    <div class="item-title">المستشفى التخصصي لأمراض وجراحة الجهاز الهضمي والكبد[span_7](start_span)[span_7](end_span)</div>
+                    <div class="item-org-date">الفترة: 2023 - الآن[span_8](start_span)[span_8](end_span)</div>
                     <ul>
-                        <li>تدريب سريري مستمر منذ المرحلة الأولى في الدراسة الجامعية.</li>
-                        <li>اكتساب مهارات عملية متقدمة في صالات العمليات ووحدات العناية المركزة.</li>
-                        <li>التدريب على التنبيب الرغامي (Endotracheal Intubation) تحت إشراف أخصائي التخدير والعناية المركزة.</li>
-                        <li>مراقبة العلامات الحيوية قبل وأثناء وبعد التخدير بدقة عالية.</li>
-                        <li>حساب وتحضير الجرعات الدوائية الخاصة بالتخدير بشكل عملي وآمن.</li>
-                        <li>التعامل المباشر مع أجهزة التخدير والمراقبة الحيوية الحديثة.</li>
+                        <li>تدريب سريري مستمر منذ المرحلة الأولى في الدراسة الجامعية[span_9](start_span)[span_9](end_span).</li>
+                        <li>اكتساب مهارات عملية متقدمة في صالات العمليات ووحدات العناية المركزة[span_10](start_span)[span_10](end_span).</li>
+                        <li>التدريب على التنبيب الرغامي (Endotracheal Intubation) تحت إشراف أخصائي التخدير والعناية المركزة[span_11](start_span)[span_11](end_span).</li>
+                        <li>مراقبة العلامات الحيوية قبل وأثناء وبعد التخدير[span_12](start_span)[span_12](end_span).</li>
+                        <li>حساب وتحضير الجرعات الدوائية الخاصة بالتخدير[span_13](start_span)[span_13](end_span).</li>
+                        <li>التعامل مع أجهزة التخدير والمراقبة الحيوية[span_14](start_span)[span_14](end_span).</li>
                     </ul>
                 </div>
 
                 <div class="experience-item">
-                    <div class="item-title">مستشفى النجف الأشرف التعليمي - وحدة العناية المركزة (ICU)</div>
-                    <div class="item-org-date">الفترة: 2025 - 2026</div>
+                    <div class="item-title">مستشفى النجف الأشرف التعليمي - وحدة العناية المركزة (ICU)[span_15](start_span)[span_15](end_span)</div>
+                    <div class="item-org-date">الفترة: 2025 - 2026[span_16](start_span)[span_16](end_span)</div>
                     <ul>
-                        <li>التدريب العملي المكثف في رعاية مرضى الحالات الحرجة.</li>
-                        <li>متابعة المرضى المستمرة على أجهزة المراقبة الحيوية وأجهزة الدعم المتقدم.</li>
-                        <li>العمل بكفاءة ضمن الفريق الطبي المتكامل في تقديم الرعاية الصحية المتقدمة.</li>
+                        <li>التدريب العملي في رعاية مرضى الحالات الحرجة[span_17](start_span)[span_17](end_span).</li>
+                        <li>متابعة المرضى على أجهزة المراقبة الحيوية[span_18](start_span)[span_18](end_span).</li>
+                        <li>العمل ضمن الفريق الطبي في تقديم الرعاية المتقدمة[span_19](start_span)[span_19](end_span).</li>
                     </ul>
                 </div>
             </section>
@@ -256,11 +310,11 @@
             <section class="section-box">
                 <div class="section-heading">📚 المؤهلات الأكاديمية والتدريسية</div>
                 <ul>
-                    <li>الاستعداد التام للمشاركة في التدريس العملي والمختبري لمواد قسم تقنيات التخدير والعناية المركزة.</li>
-                    <li>القدرة المتميزة على شرح المفاهيم النظرية والعملية للطلبة بأسلوب مبسط ومنهجي.</li>
-                    <li>الإسهام الفاعل في تنظيم وإدارة المختبرات التعليمية الخاصة بالتخدير والعناية المركزة.</li>
-                    <li>المشاركة في إعداد المواد التعليمية والدروس العملية تحت إشراف الهيئة التدريسية.</li>
-                    <li>الالتزام التام بالتعليمات الأكاديمية والعمل وفق الأنظمة الجامعية الرصينة.</li>
+                    <li>الاستعداد للمشاركة في التدريس العملي والمختبري لمواد قسم تقنيات التخدير والعناية المركزة[span_20](start_span)[span_20](end_span).</li>
+                    <li>القدرة على شرح المفاهيم النظرية والعملية للطلبة بأسلوب مبسط ومنهجي[span_21](start_span)[span_21](end_span).</li>
+                    <li>الإسهام في تنظيم وإدارة المختبرات التعليمية الخاصة بالتخدير والعناية المركزة[span_22](start_span)[span_22](end_span).</li>
+                    <li>المشاركة في إعداد المواد التعليمية والدروس العملية تحت إشراف الهيئة التدريسية[span_23](start_span)[span_23](end_span).</li>
+                    <li>الالتزام بالتعليمات الأكاديمية والعمل وفق الأنظمة الجامعية[span_24](start_span)[span_24](end_span).</li>
                 </ul>
             </section>
 
@@ -268,16 +322,15 @@
             <section class="section-box">
                 <div class="section-heading">🛠️ المهارات المهنية والتقنية</div>
                 <div class="skills-container">
-                    <span class="skill-badge">العمل الاحترافي داخل صالات العمليات ووحدات العناية المركزة (ICU)</span>
-                    <span class="skill-badge">التعامل مع أجهزة التنفس الاصطناعي (Ventilator) والمراقبة</span>
-                    <span class="skill-badge">مراقبة العلامات الحيوية وتقييم الحالة السريرية للمريض</span>
-                    <span class="skill-badge">حساب وتحضير الجرعات الدوائية الخاصة بالتخدير</span>
-                    <span class="skill-badge">شرح المواد الدراسية لطلبة قسم تقنيات التخدير</span>
-                    <span class="skill-badge">مهارات تواصل فعّالة والعمل ضمن الفريق الطبي</span>
-                    <span class="skill-badge">مهارات الحاسوب الشاملة (Microsoft Word, Excel, PowerPoint)</span>
-                    <span class="skill-badge">إنشاء العروض التقديمية الاحترافية باستخدام PowerPoint</span>
-                    <span class="skill-badge">القدرة على القيام بالتحليل الإحصائي باستخدام برنامج SPSS</span>
-                    <span class="skill-badge web-dev">HTML & CSS Web Development</span>
+                    <span class="skill-badge">العمل داخل صالات العمليات ووحدات العناية المركزة (ICU)[span_25](start_span)[span_25](end_span)</span>
+                    <span class="skill-badge">التعامل مع أجهزة التنفس الاصطناعي (Ventilator) والمراقبة الحيوية[span_26](start_span)[span_26](end_span)</span>
+                    <span class="skill-badge">مراقبة العلامات الحيوية وتقييم الحالة السريرية للمريض[span_27](start_span)[span_27](end_span)</span>
+                    <span class="skill-badge">حساب وتحضير الجرعات الدوائية الخاصة بالتخدير[span_28](start_span)[span_28](end_span)</span>
+                    <span class="skill-badge">شرح المواد الدراسية لطلبة قسم تقنيات التخدير والعناية المركزة[span_29](start_span)[span_29](end_span)</span>
+                    <span class="skill-badge">مهارات تواصل فعّالة والعمل ضمن الفريق الطبي[span_30](start_span)[span_30](end_span)</span>
+                    <span class="skill-badge">مهارات الحاسوب والأنظمة الطبية (Word, Excel, PowerPoint)[span_31](start_span)[span_31](end_span)</span>
+                    <span class="skill-badge">إنشاء العروض التقديمية الاحترافية بأستخدام PowerPoint والتحليل بـ SPSS[span_32](start_span)[span_32](end_span)</span>
+                    <span class="skill-badge web-dev">HTML & Web Design Expert</span>
                 </div>
             </section>
 
@@ -285,16 +338,16 @@
             <section class="section-box">
                 <div class="section-heading">🔬 البحوث والنشاطات الأكاديمية</div>
                 <div class="experience-item">
-                    <div class="item-title">بحث التخرج</div>
-                    <p><strong>العنوان:</strong> تأثير البروبوفول في علاج تشنج الحنجرة أثناء التخدير (حصلت على تقدير امتياز).</p>
+                    <div class="item-title">بحث التخرج[span_33](start_span)[span_33](end_span)</div>
+                    <p>تأثير البروبوفول في علاج تشنج الحنجرة أثناء التخدير وحصلت على تقدير امتياز في مشروع بحث التخرج[span_34](start_span)[span_34](end_span).</p>
                 </div>
                 <div class="experience-item" style="margin-top: 15px;">
-                    <div class="item-title">النشاطات الجامعية</div>
+                    <div class="item-title">النشاطات الجامعية[span_35](start_span)[span_35](end_span)</div>
                     <ul>
-                        <li>المشاركة في حفل افتتاح المختبرات الجديدة لقسم تقنيات التخدير في جامعة الكفيل وحصلت على كتاب شكر من السيد العميد.</li>
-                        <li>المشاركة في المشهد التمثيلي التعريفي بالقسم للطلبة الجدد.</li>
-                        <li>المشاركة الفعالة في فعالية اليوم العالمي للتخدير وشرح أجهزة التخدير للسيد رئيس الجامعة والعمداء.</li>
-                        <li>المشاركة في مشهد تمثيلي يوضح دور تقني التخدير داخل صالة العمليات بحضور السيد رئيس الجامعة وعدد من العمداء ورؤساء الأقسام.</li>
+                        <li>المشاركة في حفل افتتاح المختبرات الجديدة لقسم تقنيات التخدير في جامعة الكفيل وحصلت على كتاب شكر من السيد العميد[span_36](start_span)[span_36](end_span).</li>
+                        <li>المشاركة في المشهد التمثيلي التعريفي بالقسم للطلبة الجدد[span_37](start_span)[span_37](end_span).</li>
+                        <li>المشاركة في فعالية اليوم العالمي للتخدير وشرح أجهزة التخدير للسيد رئيس الجامعة و السيد عميد الكلية وعدد من الشخصيات الأكاديمية[span_38](start_span)[span_38](end_span).</li>
+                        <li>المشاركة في مشهد تمثيلي يوضح دور تقني التخدير داخل صالة العمليات بحضور السيد رئيس الجامعة وعدد من العمداء ورؤساء الأقسام[span_39](start_span)[span_39](end_span).</li>
                     </ul>
                 </div>
             </section>
@@ -303,11 +356,10 @@
             <section class="section-box">
                 <div class="section-heading">🎯 الاهتمامات المهنية</div>
                 <ul>
-                    <li>التعليم الطبي والتدريب السريري المتقدم.</li>
-                    <li>تطوير مهارات طلبة تقنيات التخدير والعناية المركزة.</li>
-                    <li>البحث العلمي المستمر في مجال التخدير والعناية المركزة.</li>
-                    <li>العمل الأكاديمي والمختبري ضمن المؤسسات التعليمية الرصينة.</li>
-                    <li>تطوير مواقع الويب والحلول البرمجية الرقمية المبتكرة.</li>
+                    <li>التعليم الطبي والتدريب السريري[span_40](start_span)[span_40](end_span).</li>
+                    <li>تطوير مهارات طلبة تقنيات التخدير والعناية المركزة[span_41](start_span)[span_41](end_span).</li>
+                    <li>البحث العلمي في مجال التخدير والعناية المركزة[span_42](start_span)[span_42](end_span).</li>
+                    <li>العمل الأكاديمي والمختبري ضمن المؤسسات التعليمية[span_43](start_span)[span_43](end_span).</li>
                 </ul>
             </section>
 
@@ -315,8 +367,8 @@
             <section class="section-box">
                 <div class="section-heading">🗣️ اللغات</div>
                 <ul>
-                    <li><strong>العربية:</strong> اللغة الأم (إتقان تام تحدثاً وكتابةً)</li>
-                    <li><strong>الإنجليزية:</strong> جيد جدًا وخاصةً في المصطلحات الطبية المتخصصة</li>
+                    <li><strong>العربية:</strong> اللغة الأم[span_44](start_span)[span_44](end_span)</li>
+                    <li><strong>الإنجليزية:</strong> جيد جدًا وخاصةً في المصطلحات الطبية[span_45](start_span)[span_45](end_span)</li>
                 </ul>
             </section>
 
